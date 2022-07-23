@@ -1,13 +1,9 @@
-N = list(range(1896,2020,4))
+year = int(input("西暦何年ですか？[1892～2021年]"))
 
-del N[5],N[10],N[10]
-N.append(2021)
+i = (year-1892)//4
 
-Tx = ["年は夏季オリンピックを開催しま","した。","せんでした。"]
-
-string = int(input("西暦何年ですか？[1892～2021年]"))
-
-if string in N:
-    print(string,Tx[0],Tx[1])
-else:
-    print(string,Tx[0],Tx[2])
+if (year-1892)%4==0 or year==2021:
+    if i!=6 and i!=12 and i!=13 and year != 2020:
+        print(year,"年は夏季オリンピックを開催しました。")
+    else:
+        print(year,"年は夏季オリンピックを開催しませんでした。")

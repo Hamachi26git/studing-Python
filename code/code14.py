@@ -9,7 +9,6 @@ print("偶数：",G)
 K = list(n[1::2])
 print("奇数：",K)
 
-
 Slist = []
 for s in n:
     Slist.append(s)
